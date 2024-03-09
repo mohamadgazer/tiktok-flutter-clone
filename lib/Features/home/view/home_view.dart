@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
                 onPressed: () {
                   context.pushNamed(Routes.settings);
                 },
-                child: const Text("go to settings"))
+                child: const Text("go to settings +++"))
           ],
         ),
       ),
