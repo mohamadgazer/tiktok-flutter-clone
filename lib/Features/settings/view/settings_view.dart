@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_flutter_clone/generated/l10n.dart';
+
+import '../widgets/settings_body.dart';
 
 class SettingsView extends StatelessWidget {
   const SettingsView({super.key});
@@ -7,11 +10,9 @@ class SettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings Page'),
+        title: Text(S.of(context).settings_page),
       ),
-      body: const Center(
-        child: Text('This is the Settings Page'),
-      ),
+      body: const SettingsBody(),
     );
   }
 }
