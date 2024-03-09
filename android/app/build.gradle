@@ -56,12 +56,12 @@ android {
 productFlavors {
     production {
         dimension "default"
-        resValue "string", "app_name", "Doc Doc Production"
+        resValue "string", "app_name", "tiktok flutter clone Production"
         // applicationIdSuffix ".free"
     }
         development {
         dimension "default"
-        resValue "string", "app_name", "Doc Doc development"
+        resValue "string", "app_name", "tiktok flutter clone development"
         applicationIdSuffix ".dev"
     }
 }
