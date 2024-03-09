@@ -9,6 +9,7 @@ import 'package:tiktok_flutter_clone/Core/helper/bloc_observer.dart';
 import 'main_app.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     systemNavigationBarColor: Colors.amber,
     statusBarColor: Colors.red,
