@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_flutter_clone/Core/Localization/app_local.dart';
 import 'package:tiktok_flutter_clone/Core/Routes/app_router.dart';
 import 'package:tiktok_flutter_clone/Core/Routes/routes.dart';
+import 'package:tiktok_flutter_clone/generated/l10n.dart';
 
 class MainApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -9,8 +11,12 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //routing
       initialRoute: Routes.home,
       onGenerateRoute: appRouter.genrateRoute,
+      // localiztion
+      localizationsDelegates: localizationsDelegates,
+      supportedLocales: S.delegate.supportedLocales,
     );
   }
 }
