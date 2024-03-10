@@ -24,6 +24,78 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icon/Accessibility.svg
+    - assets/icon/account.svg
+    - assets/icon/Add Account Icon.svg
+    - assets/icon/ad_sign.svg
+    - assets/icon/all_activity_Polygon.svg
+    - assets/icon/Balance.svg
+    - assets/icon/Beauty.svg
+    - assets/icon/Bookmark Icon (1).svg
+    - assets/icon/bookmark.svg
+    - assets/icon/Broken Heart Icon.svg
+    - assets/icon/Bubble.svg
+    - assets/icon/Camera Stroke Icon.svg
+    - assets/icon/Clipboard Stroke Icon.svg
+    - assets/icon/Close Icon (1).svg
+    - assets/icon/close.svg
+    - assets/icon/Content preferences.svg
+    - assets/icon/Data Saver.svg
+    - assets/icon/Digital Wellbeing.svg
+    - assets/icon/diractMessages.svg
+    - assets/icon/dot.svg
+    - assets/icon/Download Icon.svg
+    - assets/icon/Duet Icon.svg
+    - assets/icon/Effects_Illustration.svg
+    - assets/icon/Ellipse 1.svg
+    - assets/icon/emoji_stroke.svg
+    - assets/icon/Facebook.svg
+    - assets/icon/Filters.svg
+    - assets/icon/Flash.svg
+    - assets/icon/Flip.svg
+    - assets/icon/Floating Tones.svg
+    - assets/icon/Heart Hide Stroke Icon.svg
+    - assets/icon/Heart Icon.svg
+    - assets/icon/heart_stroke.svg
+    - assets/icon/Help Center.svg
+    - assets/icon/home.svg
+    - assets/icon/Instagram Logo.svg
+    - assets/icon/invite_friend.svg
+    - assets/icon/Left Arrow Icon.svg
+    - assets/icon/Manage my account.svg
+    - assets/icon/Menu Icon.svg
+    - assets/icon/Message Logo.svg
+    - assets/icon/message.svg
+    - assets/icon/messages_in_message_icon.svg
+    - assets/icon/Messenger Logo.svg
+    - assets/icon/music.svg
+    - assets/icon/phone_icon.svg
+    - assets/icon/play.svg
+    - assets/icon/Plus Icon.svg
+    - assets/icon/plus.svg
+    - assets/icon/Plusbutton.svg
+    - assets/icon/Privacy and safety.svg
+    - assets/icon/qr.svg
+    - assets/icon/React Icon.svg
+    - assets/icon/Record_Button.svg
+    - assets/icon/Report a problem.svg
+    - assets/icon/Scanner Icon.svg
+    - assets/icon/search.svg
+    - assets/icon/send.svg
+    - assets/icon/Share profile.svg
+    - assets/icon/share.svg
+    - assets/icon/SMS Logo.svg
+    - assets/icon/Sounds.svg
+    - assets/icon/Speed.svg
+    - assets/icon/Tabs Icon.svg
+    - assets/icon/TikCode.svg
+    - assets/icon/Timer.svg
+    - assets/icon/Union.svg
+    - assets/icon/Upload_Illustration.svg
+    - assets/icon/Videcamera Stroke Icon.svg
+    - assets/icon/video_camera Icon.svg
+    - assets/icon/WhatsApp Logo.svg
   fonts:
     - family: Proxima
       fonts:
