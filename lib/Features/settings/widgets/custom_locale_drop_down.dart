@@ -19,6 +19,7 @@ class CustomLocaleDropDown extends StatelessWidget {
         trailing: BlocBuilder<LocaleMangerCubit, LocaleMangerState>(
           builder: (context, state) {
             return DropdownButton(
+                // ignore: unnecessary_type_check
                 value: (state is LocaleMangerState)
                     ? state.locale.languageCode
                     : null,
