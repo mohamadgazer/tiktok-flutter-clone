@@ -1,13 +1,7 @@
 part of 'locale_manger_cubit.dart';
 
-class LocaleMangerState {}
-
-final class LocaleMangerInitialState extends LocaleMangerState {}
-
-final class LocaleLoadingState extends LocaleMangerState {}
-
-final class LocaleSuccesState extends LocaleMangerState {
+class LocaleMangerState {
   final Locale locale;
 
-  LocaleSuccesState(this.locale);
+  LocaleMangerState(this.locale);
 }
