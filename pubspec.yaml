@@ -24,5 +24,15 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Proxima
+      fonts:
+        - asset: assets/fonts/Proxima-Nova-bold.otf
+        - asset: assets/fonts/Proxima-Nova-regular.otf
+        - asset: assets/fonts/Proxima-Nova-semibold.otf
+    - family: SF-Pro-Text
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Regular.otf
+        - asset: assets/fonts/SF-Pro-Text-Semibold.otf
 flutter_intl:
   enabled: true
