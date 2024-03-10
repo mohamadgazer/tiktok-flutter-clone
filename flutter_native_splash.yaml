@@ -1,0 +1,10 @@
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/logo.png
+  android_12:
+    image: assets/images/logo.png
+    color: "#000000"
+    # متغيرات أخرى لتخصيص شاشة البداية في Android 12
+    # ...
+  # متغيرات أخرى لتخصيص شاشة البداية
+  # ...
