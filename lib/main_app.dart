@@ -27,7 +27,7 @@ class MainApp extends StatelessWidget {
             localizationsDelegates: localizationsDelegates,
             supportedLocales: S.delegate.supportedLocales,
 
-            locale: (state is LocaleSuccesState)
+            locale: (state is LocaleMangerState)
                 ? state.locale
                 : const Locale("en"),
             //deview preview
