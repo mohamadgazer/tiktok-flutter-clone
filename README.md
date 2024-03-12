@@ -1,5 +1,3 @@
-بالطبع، إليك وصف مقترح لمشروع TikTok Flutter Clone على GitHub باللغة الإنجليزية:
-
 # TikTok Flutter Clone
 
 A demo project inspired by TikTok using Flutter and Laravel.
