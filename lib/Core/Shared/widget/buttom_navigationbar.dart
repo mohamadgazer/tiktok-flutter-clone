@@ -1,52 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:tiktok_flutter_clone/Core/Shared/icons/app_icon.dart';
+import 'package:tiktok_flutter_clone/Features/tabs/cubit_tabs/tabs_view_cubit.dart';
 
-class TikTokBottomNavBar extends StatefulWidget {
+class TikTokBottomNavBar extends StatelessWidget {
   const TikTokBottomNavBar({super.key});
 
   @override
-  _TikTokBottomNavBarState createState() => _TikTokBottomNavBarState();
-}
-
-class _TikTokBottomNavBarState extends State<TikTokBottomNavBar> {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      backgroundColor: Colors.black,
-      selectedItemColor: Colors.white,
-      unselectedItemColor: Colors.grey,
-      currentIndex: _selectedIndex,
-      onTap: _onItemTapped,
-      type: BottomNavigationBarType.fixed,
-      items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Home',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.search),
-          label: 'Discover',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.add),
-          label: 'Add',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.message),
-          label: 'Inbox',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.person),
-          label: 'Me',
-        ),
-      ],
+    return BlocProvider(
+      create: (context) => TabsViewCubit(),
+      child: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        currentIndex: BlocProvider.of<TabsViewCubit>(context).index,
+        onTap: (index) {
+          BlocProvider.of<TabsViewCubit>(context).setIndex = index;
+        },
+        type: BottomNavigationBarType.fixed,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(AppIconManger.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(AppIconManger.search),
+            label: 'Discover',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              AppIconManger.plus,
+            ),
+            label: 'Add',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              height: 30.h,
+              AppIconManger.messagesInMessageIcon,
+            ),
+            label: 'Inbox',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              height: 30.h,
+              AppIconManger.account,
+            ),
+            label: 'Me',
+          ),
+        ],
+      ),
     );
   }
 }
