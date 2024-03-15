@@ -1,7 +1,5 @@
 class Routes {
-  //main screen --> tabsview
-  static const String tabsview = "/";
-  static const String home = "/home";
+  static const String home = "/";
   static const String camera = "/camera";
   static const String uploadVideo = "/upload_video";
   static const String userView = "/userView";
