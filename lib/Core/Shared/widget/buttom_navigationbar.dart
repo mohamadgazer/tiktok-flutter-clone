@@ -12,45 +12,49 @@ class TikTokBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => TabsViewCubit(),
-      child: BottomNavigationBar(
-        backgroundColor: Colors.black,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
-        currentIndex: BlocProvider.of<TabsViewCubit>(context).index,
-        onTap: (index) {
-          BlocProvider.of<TabsViewCubit>(context).setIndex = index;
+      child: BlocBuilder<TabsViewCubit, TabsViewState>(
+        builder: (context, state) {
+          return BottomNavigationBar(
+            backgroundColor: Colors.black,
+            selectedItemColor: Colors.white,
+            unselectedItemColor: Colors.grey,
+            currentIndex: BlocProvider.of<TabsViewCubit>(context).index,
+            onTap: (index) {
+              BlocProvider.of<TabsViewCubit>(context).setIndex = index;
+            },
+            type: BottomNavigationBarType.fixed,
+            items: <BottomNavigationBarItem>[
+              BottomNavigationBarItem(
+                icon: SvgPicture.asset(AppIconManger.home),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: SvgPicture.asset(AppIconManger.search),
+                label: 'Discover',
+              ),
+              BottomNavigationBarItem(
+                icon: SvgPicture.asset(
+                  AppIconManger.plus,
+                ),
+                label: 'Add',
+              ),
+              BottomNavigationBarItem(
+                icon: SvgPicture.asset(
+                  height: 30.h,
+                  AppIconManger.messagesInMessageIcon,
+                ),
+                label: 'Inbox',
+              ),
+              BottomNavigationBarItem(
+                icon: SvgPicture.asset(
+                  height: 30.h,
+                  AppIconManger.account,
+                ),
+                label: 'Me',
+              ),
+            ],
+          );
         },
-        type: BottomNavigationBarType.fixed,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(AppIconManger.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(AppIconManger.search),
-            label: 'Discover',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              AppIconManger.plus,
-            ),
-            label: 'Add',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              height: 30.h,
-              AppIconManger.messagesInMessageIcon,
-            ),
-            label: 'Inbox',
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              height: 30.h,
-              AppIconManger.account,
-            ),
-            label: 'Me',
-          ),
-        ],
       ),
     );
   }

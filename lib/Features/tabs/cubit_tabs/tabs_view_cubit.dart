@@ -10,6 +10,7 @@ part 'tabs_view_state.dart';
 
 class TabsViewCubit extends Cubit<TabsViewState> {
   TabsViewCubit() : super(TabsViewInitial());
+  // this list will be edited
   List screens = [
     const HomeView(),
     const EditUserView(),
