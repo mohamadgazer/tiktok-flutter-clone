@@ -34,7 +34,7 @@ class TikTokBottomNavBar extends StatelessWidget {
               icon: SvgPicture.asset(
                 AppIconManger.plus,
               ),
-              label: 'Add',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
