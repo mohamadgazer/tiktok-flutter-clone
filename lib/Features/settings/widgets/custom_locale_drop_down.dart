@@ -27,7 +27,7 @@ class CustomLocaleDropDown extends StatelessWidget {
                   "ar",
                   "en",
                   "hi",
-                  "ja",
+                  "jax",
                 ].map<DropdownMenuItem<String>>((String value) {
                   String languageName = "";
 
