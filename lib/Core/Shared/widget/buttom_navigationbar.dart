@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tiktok_flutter_clone/Core/Shared/icons/app_icon.dart';
 import 'package:tiktok_flutter_clone/Features/tabs/cubit_tabs/tabs_view_cubit.dart';
+import 'package:tiktok_flutter_clone/generated/l10n.dart';
 
 class TikTokBottomNavBar extends StatelessWidget {
   const TikTokBottomNavBar({super.key});
@@ -24,7 +25,7 @@ class TikTokBottomNavBar extends StatelessWidget {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: SvgPicture.asset(AppIconManger.home),
-              label: 'Home',
+              label: S.of(context).home,
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(AppIconManger.search),
