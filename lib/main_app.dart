@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
           minTextAdapt: true,
           child: MaterialApp(
             //routing
-            initialRoute: Routes.tabsview,
+            initialRoute: Routes.home,
             onGenerateRoute: appRouter.genrateRoute,
             // localiztion
             localizationsDelegates: localizationsDelegates,
