@@ -3,6 +3,7 @@ import 'package:meta/meta.dart';
 import 'package:tiktok_flutter_clone/Features/camera/view/camera_view.dart';
 import 'package:tiktok_flutter_clone/Features/edit%20user/view/edit_user_view.dart';
 import 'package:tiktok_flutter_clone/Features/home/view/home_view.dart';
+import 'package:tiktok_flutter_clone/Features/other_user_profile/view/user_profile.dart';
 import 'package:tiktok_flutter_clone/Features/settings/view/settings_view.dart';
 import 'package:tiktok_flutter_clone/Features/upload%20video/view/upload_video_view.dart';
 
@@ -13,7 +14,7 @@ class TabsViewCubit extends Cubit<TabsViewState> {
   // this list will be edited
   List screens = [
     const HomeView(),
-    const EditUserView(),
+    const UserProfile(),
     const UploadVideoView(),
     const CameraView(),
     const SettingsView()
