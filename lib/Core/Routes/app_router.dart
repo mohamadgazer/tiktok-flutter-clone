@@ -4,17 +4,12 @@ import 'package:tiktok_flutter_clone/Features/camera/view/camera_view.dart';
 import 'package:tiktok_flutter_clone/Features/edit%20user/view/edit_user_view.dart';
 import 'package:tiktok_flutter_clone/Features/home/view/home_view.dart';
 import 'package:tiktok_flutter_clone/Features/settings/view/settings_view.dart';
-import 'package:tiktok_flutter_clone/Features/tabs/tabs_view.dart';
 import 'package:tiktok_flutter_clone/Features/upload%20video/view/upload_video_view.dart';
 import 'package:tiktok_flutter_clone/Features/user/view/user_view.dart';
 
 class AppRouter {
   Route genrateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case Routes.tabsview:
-        return MaterialPageRoute(
-          builder: (context) => const TabsView(),
-        );
       case Routes.home:
         return MaterialPageRoute(
           builder: (context) => const HomeView(),
