@@ -72,6 +72,11 @@ class AppTextStyle {
     fontSize: 17.sp,
     color: AppColorManger.white,
   );
+  static TextStyle s17proximaBoldBlack = AppFontManager.sfProTextSemibold
+      .copyWith(
+          fontSize: 17.sp,
+          color: AppColorManger.black,
+          fontWeight: FontWeight.bold);
 
 // blod
 // 11
