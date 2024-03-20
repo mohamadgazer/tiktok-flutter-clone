@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999927847051",
+    "project_id": "call-distribution",
+    "storage_bucket": "call-distribution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999927847051:android:d59af202f58ee96ce49c8e",
+        "android_client_info": {
+          "package_name": "com.example.tiktok_flutter_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChKTDCwEL9usbmilFgyA2gdycmaoJ2yyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
