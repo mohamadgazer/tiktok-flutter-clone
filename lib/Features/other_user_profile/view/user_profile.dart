@@ -1,15 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:tiktok_flutter_clone/Core/Shared/color/app_color.dart';
 import 'package:tiktok_flutter_clone/Core/Shared/icons/app_icon.dart';
 import 'package:tiktok_flutter_clone/Core/Shared/style/app_text_style.dart';
+import 'package:tiktok_flutter_clone/Core/Shared/widget/custom_button.dart';
 import 'package:tiktok_flutter_clone/Features/settings/view/settings_view.dart';
-import 'package:tiktok_flutter_clone/Features/user/view/widgets/button.dart';
 
-class UserView extends StatelessWidget {
-  const UserView({
+class UserProfile extends StatelessWidget {
+  const UserProfile({
     super.key,
   });
 
@@ -31,16 +30,14 @@ class UserView extends StatelessWidget {
                 height: 50.h,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  SizedBox(
-                    width: 130.w,
+                  SvgPicture.asset(
+                    AppIconManger.addAccountIcon,
+                    color: Colors.black,
                   ),
                   const Text(
                     'Account Name',
-                  ),
-                  SizedBox(
-                    width: 110.w,
                   ),
                   GestureDetector(
                     onTap: () => Navigator.push(
@@ -52,9 +49,6 @@ class UserView extends StatelessWidget {
                       AppIconManger.menuIcon,
                       color: Colors.black,
                     ),
-                  ),
-                  SizedBox(
-                    width: 10.w,
                   ),
                 ],
               ),
@@ -123,13 +117,14 @@ class UserView extends StatelessWidget {
                 children: [
                   CustomButton(
                     widget: const Text(
-                      'Edit Profile',
+                      'Un Follow',
                       style: TextStyle(
                           fontSize: 16,
                           color: Colors.black), // Adjust text style as needed
                     ),
                     high: 50.h,
                     width: 200.w,
+                    color: AppColorManger.tiktokPink,
                   ),
                   SizedBox(
                     width: 5.w,
@@ -141,17 +136,19 @@ class UserView extends StatelessWidget {
                     ),
                     high: 50.h,
                     width: 40.w,
+                    color: AppColorManger.white,
                   ),
                 ],
               ),
-              const TextField(
-                textAlign: TextAlign.center,
-                decoration: InputDecoration(hintText: 'Tap to add bio'),
+              const Divider(
+                color: AppColorManger.darkGrey,
+                indent: 20,
+                endIndent: 20,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SvgPicture.asset(AppIconManger.tabsIcon),
                     SvgPicture.asset(
