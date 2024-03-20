@@ -11,7 +11,7 @@ class CustomLocaleDropDown extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
         title: const Text(
-          "select Language",
+          "select Language:",
           style: TextStyle(
             fontSize: 18,
           ),
@@ -27,7 +27,7 @@ class CustomLocaleDropDown extends StatelessWidget {
                   "ar",
                   "en",
                   "hi",
-                  "ja",
+                  "jax",
                 ].map<DropdownMenuItem<String>>((String value) {
                   String languageName = "";
 
