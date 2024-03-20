@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   device_preview: ^1.1.0
+  firebase_core: ^2.27.1
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.4
