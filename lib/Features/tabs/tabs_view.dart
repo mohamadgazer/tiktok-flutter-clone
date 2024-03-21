@@ -14,7 +14,7 @@ class TabsView extends StatelessWidget {
       child: BlocBuilder<TabsViewCubit, TabsViewState>(
         builder: (context, state) {
           return Scaffold(
-              bottomNavigationBar: const TikTokBottomNavBar(),
+              // bottomNavigationBar: const TikTokBottomNavBar(),
               body: BlocProvider.of<TabsViewCubit>(context)
                   .screens[BlocProvider.of<TabsViewCubit>(context).getIndex()]);
         },

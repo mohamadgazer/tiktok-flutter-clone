@@ -1,8 +1,8 @@
 part of 'tabs_view_cubit.dart';
 
 @immutable
-sealed class TabsViewState {}
+ class TabsViewState {}
 
-final class TabsViewInitial extends TabsViewState {}
+ class TabsViewInitial extends TabsViewState {}
 
-final class TabsChangedState extends TabsViewState {}
+ class TabsChangedState extends TabsViewState {}

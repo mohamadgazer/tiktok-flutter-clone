@@ -6,7 +6,17 @@ import 'package:tiktok_flutter_clone/Core/Localization/app_local.dart';
 import 'package:tiktok_flutter_clone/Core/Routes/app_router.dart';
 import 'package:tiktok_flutter_clone/Core/Routes/routes.dart';
 import 'package:tiktok_flutter_clone/Core/Shared/cubit/locale/locale_manger_cubit.dart';
+import 'package:tiktok_flutter_clone/Features/home/view/home_view.dart';
+import 'package:tiktok_flutter_clone/Features/home/view/home_view.dart';
+import 'package:tiktok_flutter_clone/Features/onboarding/interests_screen.dart';
+import 'package:tiktok_flutter_clone/Features/onboarding/interests_screen.dart';
+import 'package:tiktok_flutter_clone/Features/onboarding/interests_screen.dart';
+import 'package:tiktok_flutter_clone/Features/onboarding/tutorial_screen.dart';
 import 'package:tiktok_flutter_clone/generated/l10n.dart';
+
+import 'Features/home/view/home_view.dart';
+import 'Features/home/view/home_view.dart';
+import 'Features/onboarding/interests_screen.dart';
 
 class MainApp extends StatelessWidget {
   final AppRouter appRouter;
